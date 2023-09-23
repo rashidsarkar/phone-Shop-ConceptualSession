@@ -45,7 +45,7 @@ function Favorite() {
         <div>
           {favorite.length > 0 && (
             <div>
-              <p>Total Bill : {total}</p>
+              <p>Total Bill : {total.toFixed(2)}</p>
               <button
                 onClick={handleRemoved}
                 className="block mx-auto btn btn-error"

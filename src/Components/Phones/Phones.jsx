@@ -6,7 +6,7 @@ function Phones({ phones }) {
       <h1 className="text-2xl font-semibold text-center">
         ALL Catagory Phones
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 ">
+      <div className="grid grid-cols-1 gap-5 py-10 md:grid-cols-2 lg:grid-cols-3 ">
         {phones?.map((phone) => (
           <PhoneCart phone={phone} key={phone.id}></PhoneCart>
         ))}
