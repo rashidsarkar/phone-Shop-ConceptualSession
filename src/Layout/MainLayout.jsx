@@ -5,7 +5,9 @@ function MainLayout() {
   return (
     <div className="max-w-[1320px] mx-auto">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="py-10">
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 }
