@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useOutletContext } from "react-router-dom";
 import Banner from "../Components/Header/Banner/Banner";
 import Phones from "../Components/Phones/Phones";
 import useGetPhone from "../Hooks/useGetPhone";
@@ -6,7 +6,8 @@ import useGetPhone from "../Hooks/useGetPhone";
 function Home() {
   const phones = useLoaderData();
   const { phone } = useGetPhone();
-  console.log(phone);
+  const constestText = useOutletContext();
+  console.log(phone, constestText);
 
   return (
     <div>

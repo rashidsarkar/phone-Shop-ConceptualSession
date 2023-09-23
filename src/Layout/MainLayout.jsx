@@ -6,7 +6,7 @@ function MainLayout() {
     <div className="max-w-[1320px] mx-auto">
       <Navbar></Navbar>
       <div className="py-10">
-        <Outlet></Outlet>
+        <Outlet context={`contest from amin layout`}></Outlet>
       </div>
     </div>
   );
