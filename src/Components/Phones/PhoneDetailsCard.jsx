@@ -1,3 +1,5 @@
+import swal from "sweetalert";
+
 function PhoneDetailsCard({ phone }) {
   const { image, phone_name, price, rating, id, brand_name } = phone;
   const handleAddtoFav = () => {
@@ -8,15 +10,16 @@ function PhoneDetailsCard({ phone }) {
     if (!favoritesItem) {
       addedFavaritArray.push(phone);
       localStorage.setItem("favorites", JSON.stringify(addedFavaritArray));
-      alert("Prodact Added");
+
+      swal("Good job!", "Prodact Added!", "success");
     } else {
       const isExits = favoritesItem.find((phone) => phone.id == id);
       if (!isExits) {
         addedFavaritArray.push(...favoritesItem, phone);
         localStorage.setItem("favorites", JSON.stringify(addedFavaritArray));
-        alert("Prodact Added");
+        swal("Good job!", "Prodact Added!", "success");
       } else {
-        console.log("already ase");
+        swal("Error!", "Prodact Added Already!", "error");
       }
     }
   };
