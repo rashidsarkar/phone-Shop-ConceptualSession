@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import PhoneDetailsCard from "./PhoneDetailsCard";
+import FavaritCard from "../FavaritCard/FavaritCard";
 
 function PhoneDetails() {
   const [phone, setPhone] = useState({});
@@ -17,6 +18,7 @@ function PhoneDetails() {
   return (
     <div>
       <PhoneDetailsCard phone={phone}></PhoneDetailsCard>
+      {/* <FavaritCard phone={phone}></FavaritCard> */}
     </div>
   );
 }

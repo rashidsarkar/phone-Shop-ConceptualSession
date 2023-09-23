@@ -1,28 +1,5 @@
-import swal from "sweetalert";
-
-function PhoneDetailsCard({ phone }) {
+function FavaritCard({ phone }) {
   const { image, phone_name, price, rating, id, brand_name } = phone;
-  const handleAddtoFav = () => {
-    const addedFavaritArray = [];
-    const favoritesItem = JSON.parse(localStorage.getItem("favorites"));
-
-    // pay nai kiso tokon
-    if (!favoritesItem) {
-      addedFavaritArray.push(phone);
-      localStorage.setItem("favorites", JSON.stringify(addedFavaritArray));
-
-      swal("Good job!", "Prodact Added!", "success");
-    } else {
-      const isExits = favoritesItem.find((phone) => phone.id == id);
-      if (!isExits) {
-        addedFavaritArray.push(...favoritesItem, phone);
-        localStorage.setItem("favorites", JSON.stringify(addedFavaritArray));
-        swal("Good job!", "Prodact Added!", "success");
-      } else {
-        swal("Error!", "Prodact Added Already!", "error");
-      }
-    }
-  };
 
   return (
     <div className="flex justify-center items-center h-[80vh] ">
@@ -68,4 +45,4 @@ function PhoneDetailsCard({ phone }) {
   );
 }
 
-export default PhoneDetailsCard;
+export default FavaritCard;
