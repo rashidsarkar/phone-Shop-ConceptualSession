@@ -2,17 +2,17 @@
 
 Welcome to my GitHub repository. Here, you'll find a link to my live web project. Let's jump right in!
 
+## Live Website
+
+You can check out my this project live by clicking the link below:
+
+[**Live Web Project**](https://reliable-horse-bda5f3.netlify.app/)
+
+Feel free to explore the project and see it in action. Your feedback is always appreciated!
+
 ## About Me
 
 I'm Rashid, a passionate web developer who loves to build beautiful and functional websites. My skill set includes HTML, CSS, JavaScript, React, Tailwind CSS, and working with APIs.
-
-## Live Website
-
-You can check out my latest project live by clicking the link below:
-
-[**Live Web Project**](https://www.example.com)
-
-Feel free to explore the project and see it in action. Your feedback is always appreciated!
 
 ## Motivational Message
 
